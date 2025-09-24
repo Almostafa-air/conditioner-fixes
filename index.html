@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فني تكييف المدينة المنورة - خدمات صيانة وتركيب التكييف</title>
+    <meta name="description" content="أفضل فني تكييف في المدينة المنورة. خدمات صيانة وتركيب وإصلاح أجهزة التكييف على مدار 24 ساعة. اتصل الآن للحصول على خدمة سريعة ومضمونة.">
+    <script>
+        // Redirect to the actual app
+        window.location.href = '/app/';
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .contact {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        .phone {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FFD700;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: rgba(255, 215, 0, 0.2);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .phone:hover {
+            background: rgba(255, 215, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        .loading {
+            margin-top: 30px;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid white;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .service {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 فني تكييف المدينة المنورة</h1>
+        <p>خدمات صيانة وتركيب وإصلاح أجهزة التكييف المركزي والسبليت على مدار 24 ساعة</p>
+        
+        <div class="services">
+            <div class="service">
+                <h3>🛠️ صيانة دورية</h3>
+                <p>صيانة شاملة لجميع أنواع المكيفات</p>
+            </div>
+            <div class="service">
+                <h3>🔧 إصلاح فوري</h3>
+                <p>إصلاح الأعطال في نفس اليوم</p>
+            </div>
+            <div class="service">
+                <h3>📦 تركيب جديد</h3>
+                <p>تركيب مكيفات جديدة بضمان</p>
+            </div>
+            <div class="service">
+                <h3>🧹 تنظيف عميق</h3>
+                <p>تنظيف وتعقيم المكيفات</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>📞 اتصل الآن للحصول على خدمة فورية</h2>
+            <a href="tel:+966501234567" class="phone">📱 0501234567</a>
+            <a href="tel:+966551234567" class="phone">📱 0551234567</a>
+            <p>خدمة 24 ساعة - جميع أحياء المدينة المنورة</p>
+        </div>
+
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>جاري تحميل الموقع الكامل...</p>
+        </div>
+    </div>
+
+    <script>
+        // Try to redirect after 3 seconds if the app doesn't load
+        setTimeout(function() {
+            if (window.location.pathname === '/') {
+                // If still on root, show contact info
+                document.querySelector('.loading').innerHTML = '<p>للتواصل المباشر اتصل على الأرقام أعلاه</p>';
+            }
+        }, 3000);
+    </script>
+</body>
+</html>
